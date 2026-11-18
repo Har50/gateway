@@ -59,5 +59,20 @@ AgentExec v2.6 includes the foundational middleware for **HyperFluid**, a zero-g
 * **Dual-Signature Asset Swaps:** Both Maker and Taker sign `receiveWithAuthorization` payloads.
 * **Atomic Rollbacks:** Safe batching ensures a single failed signature does not revert an entire L2 settlement batch.
 ---
+## 💡 Use Cases: What Can You Build with AgentExec?
+
+AgentExec provides the foundational **AI agent payment tools** and **automated transaction processing** infrastructure required to transition from read-only chatbots to autonomous economic actors. By handling non-custodial crypto payments natively, developers can deploy **Web3 agents** capable of making autonomous financial decisions.
+
+### 1. API Monetization & Agentic Paywalls
+
+The traditional Web2 SaaS model blocks AI agents with credit card forms and CAPTCHAs. AgentExec enables true **API monetization** for machine-to-machine traffic. When an agent hits a gated endpoint, the `@ngtchain/paywall` middleware issues an HTTP 402 challenge. This allows developers to easily dictate **how AI agents pay for APIs**—metering data, compute, or premium content by the millisecond using zero-gas USDC micro-payments.
+
+### 2. Automated Trading Tools for AI (DeFi)
+
+Building high-frequency, **automated trading tools** requires infrastructure that doesn't bottleneck at the clearinghouse or pause for network congestion. By integrating AgentExec with the HyperFluid DEX matching engine, your AI agents can execute trustless, cross-chain or same-chain micro-swaps (utilizing EIP-3009 dual-signature asset swaps) completely gas-free. It acts as the ultimate **MCP payment server** for DeFi trading bots like `@blocksurfer`.
+
+### 3. Machine-to-Machine (M2M) B2B Payments
+
+Instead of relying on human intervention to fund cloud wallets, AgentExec enables **non-custodial crypto payments** where agents negotiate and settle B2B service contracts autonomously. Whether it is an agent paying another agent for dataset labeling, or automated supply chain orchestration, the built-in VPCShield compliance ensures every peer-to-peer transaction is cleared against regional tax rules (like India VDA §194S) before execution.
 ## 📄 License
 MIT License. See `LICENSE` for details.
